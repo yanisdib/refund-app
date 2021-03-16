@@ -39,7 +39,7 @@ function QrContainer({ reader, setInvoice, setIsRefundOptionsVisible, children }
                     <p className="mt-5">{error ? error : status}</p>
                 </div>
 
-                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mt-sm-5 mt-5 refund-form p-3">
+                <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 offset-md-2 mt-sm-5 mt-5 refund-form p-3">
                     <p className="mb-4">Make sure that your QR Code is bright and visible enough in front of the camera.</p>
                     <h6 className="fw-5 mb-4">Your camera doesn't work?</h6>
                     <EventButton style="alternate" icon={WallpaperIcon} onClick={handleImageSubmit}>
