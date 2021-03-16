@@ -1,0 +1,58 @@
+@import "bootstrap";
+@import "./fonts";
+@import "./variables";
+@import "./custom";
+@import "./animations";
+
+@for $i from 1 to 9 {
+    .fw-#{$i} {
+        font-weight: $i * 100;
+    }
+}
+
+.qr-scanner {
+    max-height: 800px;
+
+    section,
+    img,
+    canvas {
+        display: flex !important;
+    }
+}
+
+.invoices-list-empty{
+    height: 400px;
+    align-content: center;
+}
+
+.invoices-list-item {
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: -1px 7px 8px 4px rgba(113, 168, 253, 0.15);
+    -webkit-box-shadow: -1px 7px 8px 4px rgba(113, 168, 253, 0.15);
+    -moz-box-shadow: -1px 7px 8px 4px rgba(113, 168, 253, 0.15);
+}
+
+.blue {
+    color: $secondary-color;
+}
+.red {
+    color: $danger-color;
+}
+.yellow {
+    color: $special-color;
+}
+.green {
+    color: $success-color;
+}
+.gray {
+    color: #f5f5f5;
+}
+
+.refund-form{
+    border: 2px $alternate-color solid;
+    border-radius: 20px;
+    align-self: center;
+}

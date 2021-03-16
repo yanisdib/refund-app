@@ -1,0 +1,79 @@
+.btn{
+    border-radius: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.btn-event{width: auto;}
+
+.btn-event-primary {
+  background-color: $primary-btn-action;
+  color: $primary-action-color;
+  &:hover {
+    text-decoration: none !important;
+    color: $primary-action-color;
+  }
+  svg {
+    color: inherit !important;
+  }
+}
+
+.btn-event-alternate {
+  background-color: $secondary-btn-action;
+  color: $secondary-action-color;
+  &:hover {
+    text-decoration: none !important;
+    color: $secondary-action-color;
+  }
+  svg {
+    color: inherit !important;
+  }
+}
+
+.btn-event-info {
+  background-color: $info-btn-action;
+  color: $info-action-color;
+  &:hover {
+    text-decoration: none !important;
+    color: $info-action-color !important;
+  }
+  svg {
+    color: inherit !important;
+  }
+}
+
+.btn-event-general {
+  background-color: $general-btn-action;
+  color: $general-event-color;
+  &:hover {
+    text-decoration: none !important;
+    color: $general-event-color !important;
+  }
+  svg {
+    color: inherit !important;
+  }
+}
+
+//*** FORMS ***//
+
+label {
+  font-weight: 500 !important;
+}
+
+.form-control {
+  border: 2px solid #ced4da;
+  &:focus {
+    border: 2px solid #1967d2;
+    box-shadow: none;
+    background-color: #f4f8ff;
+    transition: background-color 15ms ease-in-out;
+  }
+}
+
+body, html {
+  background-color: #fff;
+}
+
+h4{
+  font-family: "Manrope", sans-serif;
+}
