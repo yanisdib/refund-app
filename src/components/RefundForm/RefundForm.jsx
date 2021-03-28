@@ -38,7 +38,7 @@ function RefundForm(props) {
                         type="radio"
                         name="inlineRadioOptions"
                         id="refundOption1"
-                        value="yes"
+                        value="true"
                         onChange={onFirstRadioChange}
                     />
                     <label className="form-check-label" htmlFor="refundOption1">
@@ -53,7 +53,7 @@ function RefundForm(props) {
                         type="radio"
                         name="inlineRadioOptions"
                         id="refundOption2"
-                        value="no"
+                        value="false"
                         onChange={onSecondRadioChange}
                     />
                     <label className="form-check-label" htmlFor="refundOption2">
@@ -61,7 +61,7 @@ function RefundForm(props) {
                     </label>
                 </div>
             </div>
-            {isPercentageInputVisible === "yes" ? (
+            {!!isPercentageInputVisible ? (
                 <div className="form-group mt-3">
                     <label htmlFor="inputPercentage"><h6 className="fw-5">Desired percentage of refund:</h6></label>
                     <br />
